@@ -131,6 +131,7 @@ exports.handler = async (evt, ctx, cb) => {
 
   await browser.close()
 
+  await cleanup()
+
   done(result)
-  cleanup()
 }
